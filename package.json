@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "guardar": "git add * && git commit -m 'save' && git push -u origin main"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/GustavoMayorgaGtz/Socket.io-Backend/issues"
   },
-  "homepage": "https://github.com/GustavoMayorgaGtz/Socket.io-Backend#readme"
+  "homepage": "https://github.com/GustavoMayorgaGtz/Socket.io-Backend#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
 }
